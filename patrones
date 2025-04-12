@@ -1,2 +1,41 @@
+#Los patrones en Python siempre comienzan de este modo r"expresión regular"
+
 patron=r"H.la" # El . equivale a un *. El patrón estaría solicitando palabras que comiencen por H y terminesn en la. El . sustituye a cualquier valor alfanumérico
+
 patron=r"\." # Para buscar el un . necesitas indicarlo con el la barra invertida. La barra anula el significado especial del punto.
+
+patron=r"/d{9}" # /d implica que la busqueda se limita a digitos numéricos y {9} indica que deben ser 9 dígitos en total
+
+ """
+      EJ: 
+      r"/+34 /d{9}" busca patrones de teléfono de este tipo +34 657553345
+"""
+
+patron=r"/w" # /w indica que la busqueda se centro en todos los caracteres alfanuméricos. Letras, números y símbulos.
+
+patron=r"/s" #/s indica que la búsqueda se centra en los espacios en blanco, tanto espacio, tabulación y saltos de línea.
+
+patron=r"^/w" #Sirve para validar el comienzo de una cadena. En este caso si comienza con caracteres alfanuméricos al llevar la w.
+
+"""
+
+Ejemplo:
++34 666555444
+patron=r"^+/d{1,3}" #En este caso indica q los teléfonos que busca deben comenzar con + y un número de entre 1 y 3 caracteres para poder validarlo.
+
+"""
+
+patron=r"mundo$" #el dollar indica que lo que buscamos termina por mundo.
+
+import re
+texto="casa cosa casadc calada"
+patron=r"\bc.sa\b" #indica que el inicio y el final de una palabra. El punto. como hemos mencionado es un comodin que puede ser cualquier elemento alfanumérico
+
+encontrado=re.search(patron,texto)
+
+print(encontrado)
+
+
+patron=r"platano|naranja|\b\w{7}\b" #La | es un OR. Sirve para añadir varios patrones de coincidencia.
+
+
