@@ -22,6 +22,7 @@ patron=r"^/w" #Sirve para validar el comienzo de una cadena. En este caso si com
 Ejemplo:
 +34 666555444
 patron=r"^+/d{1,3}" #En este caso indica q los teléfonos que busca deben comenzar con + y un número de entre 1 y 3 caracteres para poder validarlo.
+patron=r"^+/d{1,}" #Si no se pone el segundo valor sería de 1 o más valores
 
 """
 
@@ -37,5 +38,7 @@ print(encontrado)
 
 
 patron=r"platano|naranja|\b\w{7}\b" #La | es un OR. Sirve para añadir varios patrones de coincidencia.
+
+patron=r"a+" #Busca la letra a una o más veces. Ej a aa aaa aaaa. Es decir la concición de busqueda puden cumplire 1 o infinitas veces, o cero.
 
 
