@@ -1,2 +1,2 @@
 patron=r"H.la" # El . equivale a un *. El patrón estaría solicitando palabras que comiencen por H y terminesn en la. El . sustituye a cualquier valor alfanumérico
-patron=r"/." # Para buscar el un . necesitas indicarlo con el la barra invertida.
+patron=r"\." # Para buscar el un . necesitas indicarlo con el la barra invertida. La barra anula el significado especial del punto.
