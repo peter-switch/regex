@@ -1,7 +1,3 @@
-¡Vamos a solucionarlo ya mismo! Aquí te dejo el contenido **sin el bloque de triple comillas** para que puedas **copiar y pegar directamente en tu `README.md` en GitHub sin problemas**:
-
----
-
 # 🐍 Guía Rápida de Expresiones Regulares en Python
 
 Las expresiones regulares en Python se escriben como cadenas crudas usando `r"..."`, lo que permite evitar conflictos con caracteres especiales.
