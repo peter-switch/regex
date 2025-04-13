@@ -114,7 +114,4 @@ Puedes probar tus expresiones regulares en [regex101.com](https://regex101.com)
 
 ---
 
-¡Y recuerda! Las regex pueden parecer confusas al principio... pero con práctica, se vuelven herramientas poderosísimas. 💪✨
-
-------
 
